@@ -1,0 +1,73 @@
+<style>
+        /* ตั้งค่าพื้นฐานสำหรับหน้าเว็บ */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f0f4f8; /* เปลี่ยนสีพื้นหลังให้ดูสบายตาขึ้น */
+            color: #333;
+        }
+
+        /* ส่วนหัวของเว็บไซต์ (Header) */
+        header { 
+            background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%); /* ไล่สีพื้นหลังให้ดูมีมิติ */
+            color: #ffffff; 
+            padding: 3rem 0; 
+            text-align: center; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+        }
+
+        /* กล่องเนื้อหาหลัก */
+        .container { 
+            width: 85%; 
+            max-width: 900px; /* จำกัดความกว้างไม่ให้ยืดเกินไปในจอใหญ่ */
+            margin: 2rem auto; 
+            overflow: hidden; 
+        }
+
+        /* การตกแต่งการ์ดผลงาน */
+        .project { 
+            background: #ffffff; 
+            padding: 2rem; 
+            margin-bottom: 2rem; 
+            border-radius: 10px; /* มุมโค้งมนขึ้น */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* เงาฟุ้งๆ ดูพรีเมียม */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* เพิ่มความสมูทเวลาชี้เมาส์ */
+            border-left: 5px solid #4e4376; /* แถบสีด้านซ้ายของการ์ด */
+        }
+
+        /* ลูกเล่นเมื่อนำเมาส์ไปชี้ที่การ์ด (Hover Effect) */
+        .project:hover {
+            transform: translateY(-5px); /* การ์ดลอยขึ้นเล็กน้อย */
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15); /* เงาเข้มขึ้น */
+        }
+
+        .project h3 { 
+            margin-top: 0; 
+            color: #2b5876; 
+            font-size: 1.5rem;
+        }
+
+        /* ปุ่มกดดู Source Code */
+        .btn { 
+            display: inline-block; 
+            background: #2b5876; 
+            color: #ffffff; 
+            padding: 0.6rem 1.5rem; 
+            text-decoration: none; 
+            border-radius: 50px; /* ปุ่มโค้งมนแบบแคปซูล */
+            font-weight: bold;
+            transition: background 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .btn:hover { 
+            background: #4e4376; /* เปลี่ยนสีปุ่มเมื่อชี้เมาส์ */
+        }
+    </style>
